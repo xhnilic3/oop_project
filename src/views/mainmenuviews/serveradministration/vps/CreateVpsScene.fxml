@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.serveradministration.vps.CreateVpsController">
+   <children>
+      <VBox alignment="CENTER" layoutX="238.0" layoutY="130.0" prefHeight="141.0" prefWidth="150.0" spacing="10.0">
+         <children>
+            <ComboBox fx:id="distributionComboBox" prefWidth="150.0" promptText="Distribution" />
+            <TextField fx:id="ramSizeTextField" text="RAM size" />
+            <ComboBox fx:id="typeOfStorageComboBox" prefWidth="150.0" promptText="Storage Type" />
+            <TextField fx:id="storageSizeTextField" text="Storage size" />
+            <Button mnemonicParsing="false" onAction="#createButtonPushed" text="Create" />
+         </children>
+      </VBox>
+      <Button layoutX="524.0" layoutY="360.0" mnemonicParsing="false" onAction="#serverMenuButtonPushed" text="Server Menu" />
+   </children>
+</AnchorPane>

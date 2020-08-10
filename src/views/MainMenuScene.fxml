@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" text="Main menu" textAlignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#hostingButtonPushed" text="Hosting" />
+            <Button mnemonicParsing="false" onAction="#serverButtonPushed" text="Server" />
+            <Button mnemonicParsing="false" onAction="#dbButtonPushed" text="Database" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

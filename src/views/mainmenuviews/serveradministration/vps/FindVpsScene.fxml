@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.serveradministration.vps.findVpsController">
+   <children>
+      <HBox alignment="CENTER" layoutX="175.0" layoutY="150.0" prefHeight="100.0" prefWidth="250.0" spacing="10.0">
+         <children>
+            <TextField fx:id="uuidTextField" />
+            <Button mnemonicParsing="false" onAction="#searchButtonPushed" text="Search" />
+         </children>
+      </HBox>
+      <Button layoutX="496.0" layoutY="360.0" mnemonicParsing="false" onAction="#serverMenuButtonPushed" text="Server Menu" />
+      <TextArea fx:id="notificationTextArea" layoutX="200.0" layoutY="14.0" prefHeight="164.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

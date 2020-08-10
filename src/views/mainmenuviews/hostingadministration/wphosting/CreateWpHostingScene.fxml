@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.hostingadministration.wphosting.CreateWpHostingController">
+   <children>
+      <VBox layoutX="50.0" layoutY="88.0" prefHeight="145.0" prefWidth="150.0" spacing="10.0">
+         <children>
+            <ComboBox fx:id="dbmsTypeComboBox" prefWidth="150.0" promptText="DBMS Type" />
+            <TextField fx:id="dbNameTextField" prefWidth="150.0" text="DB name" />
+            <TextField fx:id="userNameTextField" prefWidth="150.0" text="username" />
+            <PasswordField fx:id="passwordField" prefWidth="150.0" text="password" />
+         </children>
+      </VBox>
+      <VBox layoutX="363.0" layoutY="88.0" prefHeight="145.0" prefWidth="150.0" spacing="10.0">
+         <children>
+            <TextField fx:id="domainTextField" prefWidth="150.0" text="&lt;domain&gt;.&lt;tld&gt;" />
+            <Button mnemonicParsing="false" prefWidth="150.0" text="Default DNS" />
+            <Button mnemonicParsing="false" prefWidth="150.0" text="Custom DNS" />
+         </children>
+      </VBox>
+      <Label layoutX="80.0" layoutY="53.0" text="Database">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="53.0" text="Domain/DNS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="496.0" layoutY="360.0" mnemonicParsing="false" onAction="#serverMenuButtonPushed" text="Hosting Menu" />
+      <Button layoutX="519.0" layoutY="316.0" mnemonicParsing="false" onAction="#createButtonPushed" text="Create" />
+   </children>
+</AnchorPane>

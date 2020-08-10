@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HostingMenuController">
+   <children>
+      <Button layoutX="524.0" layoutY="360.0" mnemonicParsing="false" onAction="#mainMenuButtonPushed" text="Main Menu" />
+      <VBox layoutX="508.0" layoutY="6.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <MenuButton fx:id="menuButton" mnemonicParsing="false" prefWidth="80.0" text="Create">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Classic" />
+                <MenuItem fx:id="createWphostingItem" mnemonicParsing="false" onAction="#handleCreateButtonAction" text="Wordpress" />
+              </items>
+            </MenuButton>
+            <Button mnemonicParsing="false" prefWidth="80.0" text="Select" />
+            <Button mnemonicParsing="false" onAction="#switchFindHostingScene" prefWidth="80.0" text="Find" />
+            <Button mnemonicParsing="false" onAction="#deleteButtonPushed" prefWidth="80.0" text="Delete" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="100.0" prefHeight="200.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="hostingUuid" prefWidth="115.0" text="UUID" />
+          <TableColumn fx:id="hostingDomain" prefWidth="115.0" text="Domain" />
+            <TableColumn fx:id="hostingDbmsType" prefWidth="115.0" text="DBMS" />
+            <TableColumn fx:id="hostingDbName" prefWidth="115.0" text="DB name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

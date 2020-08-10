@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.hostingadministration.wphosting.FindWpHostingController">
+   <children>
+      <VBox layoutX="180.0" layoutY="170.0" prefHeight="60.0" prefWidth="240.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="240.0" spacing="31.0">
+               <children>
+                  <Label text="Uuid:" />
+                  <TextField fx:id="uuidTextField" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="240.0" spacing="10.0">
+               <children>
+                  <Label text="Domain:" />
+                  <TextField fx:id="domainTextField" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="300.0" layoutY="240.0" mnemonicParsing="false" onAction="#searchButtonPushed" text="Search" />
+      <Button layoutX="510.0" layoutY="360.0" mnemonicParsing="false" onAction="#serverMenuButtonPushed" text="Hosting Menu" />
+      <TextArea fx:id="notificationTextArea" layoutX="155.0" layoutY="35.0" prefHeight="112.0" prefWidth="353.0" />
+   </children>
+</AnchorPane>
